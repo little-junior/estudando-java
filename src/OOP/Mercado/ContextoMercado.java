@@ -1,20 +1,18 @@
 package OOP.Mercado;
 
+import OOP.Mercado.Produtos.Shampoo;
+
 public class ContextoMercado {
     public static void main(String[] args) {
         Produto shampoo = new Produto("Maxcapilar", "02-02-2002", "cosmetico", 30);
         Produto macarrao = new Produto();
+        Shampoo Wella = new Shampoo();
 
-        System.out.println(shampoo.getNomeProduto());
-        System.out.println(macarrao.getNomeProduto());
+        Wella.setDescricaoShampoo("Recomendado para descolorir cabelo");
 
-        shampoo.setNomeProduto("Capigel");
-        System.out.println(shampoo.getNomeProduto());
+        System.out.println(Wella.getQuantidadeEmEstoqueProduto());
+        System.out.println(Wella.getDescricaoShampoo());
 
-        System.out.println(shampoo.mostrarResumoProduto());
-        System.out.println(macarrao.mostrarResumoProduto());
-
-        System.out.println(OOP.getName());
 
     }
 }
