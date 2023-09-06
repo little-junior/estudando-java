@@ -13,6 +13,10 @@ public class ContextoMercado {
         System.out.println(Wella.getQuantidadeEmEstoqueProduto());
         System.out.println(Wella.getDescricaoShampoo());
 
+        System.out.println(Wella.toString());
+        System.out.println(shampoo.toString());
+        System.out.println(Wella instanceof Shampoo);
+
 
     }
 }

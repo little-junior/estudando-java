@@ -12,4 +12,9 @@ public class Shampoo extends Produto{
     public String getDescricaoShampoo(){
         return descricaoShampoo;
     }
+
+    @Override
+    public String toString(){
+        return "Resumo do shampoo: " + super.toString();
+    }
 }

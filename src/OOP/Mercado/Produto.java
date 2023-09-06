@@ -48,8 +48,14 @@ public class Produto {
         this.quantidadeEmEstoqueProduto = quantidadeEmEstoqueProduto;
     }
 
-    public String mostrarResumoProduto(){
-        return "O produto " + nomeProduto + " tem data de validade " + dataDeValidadeProduto + ", é do tipo " +
-                tipoProduto + " e possui " + quantidadeEmEstoqueProduto + " em estoque";
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "nomeProduto='" + nomeProduto + '\'' +
+                ", dataDeValidadeProduto='" + dataDeValidadeProduto + '\'' +
+                ", tipoProduto='" + tipoProduto + '\'' +
+                ", quantidadeEmEstoqueProduto=" + quantidadeEmEstoqueProduto +
+                '}';
     }
 }
